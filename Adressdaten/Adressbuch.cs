@@ -8,14 +8,17 @@ namespace Adressverwaltung
 {
     public class Adressbuch
     {
-        public enum AdressType
+
+        public Type adressType;
+
+        public enum AdressTypeEnum
         {
             Kunden,
             Lieferanten,
             Privat
         }
 
-        public Adressbuch(Adressverwaltung.Adressbuch.AdressType type)
+        public Adressbuch(Type adressType)
         {
             AddAdress();
             DelAdress();
