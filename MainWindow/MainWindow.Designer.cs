@@ -50,7 +50,7 @@ namespace MainWindow
             this.cbxAdressType.Name = "cbxAdressType";
             this.cbxAdressType.Size = new System.Drawing.Size(121, 23);
             this.cbxAdressType.TabIndex = 0;
-            this.cbxAdressType.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbxAdressType.SelectedIndexChanged += new System.EventHandler(this.cbxAdressType_SelectedIndexChanged);
             // 
             // txtFirma
             // 
@@ -58,7 +58,6 @@ namespace MainWindow
             this.txtFirma.Name = "txtFirma";
             this.txtFirma.Size = new System.Drawing.Size(323, 23);
             this.txtFirma.TabIndex = 1;
-            this.txtFirma.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtVorname
             // 
@@ -66,7 +65,6 @@ namespace MainWindow
             this.txtVorname.Name = "txtVorname";
             this.txtVorname.Size = new System.Drawing.Size(323, 23);
             this.txtVorname.TabIndex = 2;
-            this.txtVorname.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtNachname
             // 
@@ -74,7 +72,6 @@ namespace MainWindow
             this.txtNachname.Name = "txtNachname";
             this.txtNachname.Size = new System.Drawing.Size(323, 23);
             this.txtNachname.TabIndex = 3;
-            this.txtNachname.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtAdresse
             // 
@@ -82,7 +79,6 @@ namespace MainWindow
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(323, 23);
             this.txtAdresse.TabIndex = 4;
-            this.txtAdresse.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtPLZ
             // 
@@ -90,7 +86,6 @@ namespace MainWindow
             this.txtPLZ.Name = "txtPLZ";
             this.txtPLZ.Size = new System.Drawing.Size(323, 23);
             this.txtPLZ.TabIndex = 5;
-            this.txtPLZ.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // txtOrt
             // 
@@ -98,7 +93,6 @@ namespace MainWindow
             this.txtOrt.Name = "txtOrt";
             this.txtOrt.Size = new System.Drawing.Size(323, 23);
             this.txtOrt.TabIndex = 6;
-            this.txtOrt.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // MainWindow
             // 
