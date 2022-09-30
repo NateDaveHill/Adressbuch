@@ -8,8 +8,9 @@ namespace Adressverwaltung
 {
     public class Adressbuch
     {
-
-        public Type adressType;
+        public Adressbuch(Type adressType)
+        {
+        }
 
         public enum AdressTypeEnum
         {
@@ -17,22 +18,5 @@ namespace Adressverwaltung
             Lieferanten,
             Privat
         }
-
-        public Adressbuch(Type adressType)
-        {
-            
-        }
-
-        private void CountAdress()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void DelAdress()
-        {
-            throw new NotImplementedException();
-        }
-
-        
     }
 }

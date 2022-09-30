@@ -5,7 +5,6 @@ namespace MainWindow
 {
     public partial class MainWindow : Form
     {
-        private Adressbuch adressbuch;
         public BindingList<Adressdaten> AdressdatenList { get; set; } = new();
 
         public MainWindow()
@@ -21,13 +20,12 @@ namespace MainWindow
 
         private void Refresh()
         {
-            lsbDisplayAdressbook.DataSource = AdressdatenList;
             dgvDisplayAdressbook.DataSource = AdressdatenList;
         }
 
         private void cbxAdressType_SelectedIndexChanged(object sender, EventArgs e)
         { 
-            adressbuch = new Adressbuch(cbxAdressType.SelectedItem.GetType());
+            Adressbuch adressbuch = new Adressbuch(cbxAdressType.SelectedItem.GetType());
         }
 
         private void btnAddAdressClick(object sender, EventArgs e)
@@ -52,6 +50,15 @@ namespace MainWindow
             Refresh();
         }
 
+        private void btnCount_Click(object sender, EventArgs e)
+        {
+            txtCount.Text = AdressdatenList.Count.ToString();
+        }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Adressdaten test = (Adressdaten)dgvDisplayAdressbook.CurrentRow.DataBoundItem;
+            AdressdatenList.Remove(test);
+        }
     }
 }
