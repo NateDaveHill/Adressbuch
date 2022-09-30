@@ -17,14 +17,8 @@ namespace MainWindow
 
             Refresh();
         }
-
-        private void Refresh()
-        {
-            dgvDisplayAdressbook.DataSource = AdressdatenList;
-        }
-
         private void cbxAdressType_SelectedIndexChanged(object sender, EventArgs e)
-        { 
+        {
             Adressbuch adressbuch = new Adressbuch(cbxAdressType.SelectedItem.GetType());
         }
 
@@ -59,6 +53,10 @@ namespace MainWindow
         {
             Adressdaten test = (Adressdaten)dgvDisplayAdressbook.CurrentRow.DataBoundItem;
             AdressdatenList.Remove(test);
+        }
+        private void Refresh()
+        {
+            dgvDisplayAdressbook.DataSource = AdressdatenList;
         }
     }
 }
