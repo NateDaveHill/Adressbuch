@@ -20,9 +20,7 @@ namespace Adressverwaltung
 
         public Adressbuch(Type adressType)
         {
-            AddAdress();
-            DelAdress();
-            CountAdress();
+            
         }
 
         private void CountAdress()
@@ -35,9 +33,6 @@ namespace Adressverwaltung
             throw new NotImplementedException();
         }
 
-        private void AddAdress()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

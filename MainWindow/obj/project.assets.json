@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "Adressverwaltung/1.0.0": {
+      "Adressverwaltung.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Adressverwaltung.dll": {}
+          "bin/placeholder/Adressverwaltung.Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Adressverwaltung.dll": {}
+          "bin/placeholder/Adressverwaltung.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Adressverwaltung/1.0.0": {
+    "Adressverwaltung.Model/1.0.0": {
       "type": "project",
-      "path": "../Adressdaten/Adressverwaltung.csproj",
-      "msbuildProject": "../Adressdaten/Adressverwaltung.csproj"
+      "path": "../Adressdaten/Adressverwaltung.Model.csproj",
+      "msbuildProject": "../Adressdaten/Adressverwaltung.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Adressverwaltung >= 1.0.0"
+      "Adressverwaltung.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\MainWindow\\MainWindow.csproj",
-      "projectName": "MainWindow",
-      "projectPath": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\MainWindow\\MainWindow.csproj",
+      "projectUniqueName": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\MainWindow\\Adressverwaltung.GUI.csproj",
+      "projectName": "Adressverwaltung.GUI",
+      "projectPath": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\MainWindow\\Adressverwaltung.GUI.csproj",
       "packagesPath": "C:\\Users\\hill\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\MainWindow\\obj\\",
       "projectStyle": "PackageReference",
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\Adressdaten\\Adressverwaltung.csproj": {
-              "projectPath": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\Adressdaten\\Adressverwaltung.csproj"
+            "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\Adressdaten\\Adressverwaltung.Model.csproj": {
+              "projectPath": "C:\\Users\\hill\\Desktop\\00_Temp\\03_Berufsschule_REMOTE\\2APEC\\00_ITL\\02_Adressverwaltung\\Adressdaten\\Adressverwaltung.Model.csproj"
             }
           }
         }
