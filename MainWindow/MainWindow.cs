@@ -7,13 +7,46 @@ namespace MainWindow
     {
         public BindingList<Adressdaten> AdressdatenList { get; set; } = new();
 
+
         public MainWindow()
         {
             InitializeComponent();
+
             foreach (var item in Enum.GetValues(typeof(Adressbuch.AdressTypeEnum)))
             {
                 cbxAdressType.Items.Add(item);
             }
+
+            AdressdatenList.Add(new Adressdaten()
+            {
+                Type = Adressbuch.AdressTypeEnum.Privat.ToString(),
+                Firma = "MusterFirma",
+                Vorname = "Max",
+                Nachname = "Mustermann",
+                Adresse = "Musterstraﬂe 5",
+                PLZ = "1234",
+                Ort = "Musterort"
+            });
+            AdressdatenList.Add(new Adressdaten()
+            {
+                Type = Adressbuch.AdressTypeEnum.Privat.ToString(),
+                Firma = "MusterFirma2",
+                Vorname = "Martin",
+                Nachname = "Muster",
+                Adresse = "Musterstraﬂe 6",
+                PLZ = "1234",
+                Ort = "Musterort"
+            });
+            AdressdatenList.Add(new Adressdaten()
+            {
+                Type = Adressbuch.AdressTypeEnum.Privat.ToString(),
+                Firma = "MusterFirma3",
+                Vorname = "Martina",
+                Nachname = "Musterfrau",
+                Adresse = "Musterstraﬂe 7",
+                PLZ = "1234",
+                Ort = "Musterort"
+            });
 
             Refresh();
         }
