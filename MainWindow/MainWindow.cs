@@ -17,6 +17,7 @@ namespace MainWindow
 
             Refresh();
         }
+
         private void cbxAdressType_SelectedIndexChanged(object sender, EventArgs e)
         {
             Adressbuch adressbuch = new Adressbuch(cbxAdressType.SelectedItem.GetType());
@@ -51,12 +52,29 @@ namespace MainWindow
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Adressdaten test = (Adressdaten)dgvDisplayAdressbook.CurrentRow.DataBoundItem;
-            AdressdatenList.Remove(test);
+            Adressdaten delEntry = (Adressdaten)dgvDisplayAdressbook.CurrentRow.DataBoundItem;
+            AdressdatenList.Remove(delEntry);
         }
+
         private void Refresh()
         {
             dgvDisplayAdressbook.DataSource = AdressdatenList;
+        }
+
+        private void txtSeachBar_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtSeachBar.Text))
+            {
+                Refresh();
+            }
+            else
+            {
+                var searchedEntryList = AdressdatenList.Where(x =>
+                        x.Vorname == txtSeachBar.Text || x.Nachname == txtSeachBar.Text || x.Firma == txtSeachBar.Text)
+                    .ToList();
+
+                dgvDisplayAdressbook.DataSource = searchedEntryList;
+            }
         }
     }
 }
