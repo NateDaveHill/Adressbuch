@@ -8,10 +8,12 @@ namespace Adressverwaltung
 {
     public class Adressbuch
     {
+        //Konstruktor
         public Adressbuch(Type adressType)
         {
         }
 
+        //Enum für Combobox
         public enum AdressTypeEnum
         {
             Kunden,
